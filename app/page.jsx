@@ -1,5 +1,6 @@
 import ContactForm from "./components/ContactForm";
 import IconClose from "./components/icon/IconClose";
+
 export default function Home() {
   return (
     <div className="max-w-screen-xl mx-auto sm:px-8 px-4 py-10">
@@ -12,15 +13,15 @@ export default function Home() {
         <div className="left flex flex-col sm:items-start items-center lg:w-[35%] w-full">
           <div className="top">
             <h1 className="md:text-4xl text-xl font-reckless">Media enquiries:</h1>
-            <span className="relative mt-2 text-lg font-denim after:content-[''] after:absolute after:h-[1px] after:-bottom-0.5 after:left-0 after:w-full after:bg-black after:transition-all after:duration-500 after:hover:w-0 after:hover:opacity-0 cursor-pointer">
+            <a href="mailto:press@tuum.com" className="relative mt-2 text-lg font-denim after:content-[''] after:absolute after:h-[1px] after:-bottom-0.5 after:left-0 after:w-full after:bg-black after:transition-all after:duration-500 after:hover:w-0 after:hover:opacity-0 cursor-pointer">
               press@tuum.com
-            </span>
+            </a>
           </div>
           <div className="bottom sm:mt-8 mt-4">
             <h1 className="md:text-4xl text-xl font-reckless">Career questions:</h1>
-            <span className="relative mt-2 text-lg font-denim after:content-[''] after:absolute after:h-[1px] after:-bottom-0.5 after:left-0 after:w-full after:bg-black after:transition-all after:duration-500 after:hover:w-0 after:hover:opacity-0 cursor-pointer">
+            <a href="mailto:careers@tuum.com" className="relative mt-2 text-lg font-denim after:content-[''] after:absolute after:h-[1px] after:-bottom-0.5 after:left-0 after:w-full after:bg-black after:transition-all after:duration-500 after:hover:w-0 after:hover:opacity-0 cursor-pointer">
               careers@tuum.com
-            </span>
+            </a>
           </div>
         </div>
         <div className="right lg:w-[65%] w-full lg:mt-0 mt-8">
