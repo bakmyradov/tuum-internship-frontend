@@ -32,7 +32,7 @@ const denimFont = localFont({
 });
 
 export const metadata = {
-  title: "Tuum",
+  title: "Tuum | The modular core banking platform",
 };
 
 export default function RootLayout({ children }) {

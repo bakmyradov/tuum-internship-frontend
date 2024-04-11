@@ -22,7 +22,7 @@ export default function ContactForm() {
           required
         />
         <BaseInput type="email" name="email" placeholder="Email" required />
-        <BaseInput type="text" name="jobtitle" placeholder="Job title" />
+        <BaseInput type="text" name="jobtitle" placeholder="Job Title" />
         <BaseSelectCountry list={countryList} />
         <BaseInput
           type="text"
