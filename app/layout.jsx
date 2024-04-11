@@ -21,18 +21,21 @@ const denimFont = localFont({
       weight: "400",
       format: "woff2",
       style: "normal",
+      display: "swap",
     },
     {
       path: "../public/fonts/Denim-SemiBold.woff2",
       weight: "600",
       format: "woff2",
       style: "normal",
+      display: "swap",
     },
   ],
 });
 
 export const metadata = {
   title: "Tuum | The modular core banking platform",
+  description: "The modular core banking platform",
 };
 
 export default function RootLayout({ children }) {

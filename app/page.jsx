@@ -6,7 +6,7 @@ export default function Home() {
     <div className="max-w-screen-xl mx-auto sm:px-8 px-4 py-10">
       <div className="flex sm:px-10 md:px-16 lg:px-10 xl:px-20 lg:flex-row flex-col relative">
         <div className="button absolute xl:right-[12%] lg:right-[7%] sm:right-[8%] right-[2%] lg:top-[5%] top-0">
-          <button className="lg:w-10 lg:h-10 w-10 h-10">
+          <button className="lg:w-10 lg:h-10 w-10 h-10" aria-label="Close Button">
             <IconClose />
           </button>
         </div>

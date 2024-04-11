@@ -16,12 +16,13 @@ export default function BaseSelectCountry({ list }) {
   };
 
   return (
-    <div className="relative formelement">
+    <div className="relative formelement after:content-['\25be'] after:text-[1em] after:absolute after:right-2.5 after:top-1/2 after:transform after:-translate-y-1/2">
       {hasBlurred && selectedCountry === 'country' && (
         <span className="text-xs absolute z-10 left-[0.75rem] top-[-0.5rem] px-1 bg-white text-red-500">Please complete this required field</span>
       )}
       <select
-        name="country"
+        id="countries"
+        name="countries"
         className="w-full px-4 py-2 relative border rounded-lg drop-shadow-sm border-[#d0d5dd] h-full appearance-none"
         value={selectedCountry}
         onChange={handleSelectChange}
@@ -36,7 +37,6 @@ export default function BaseSelectCountry({ list }) {
           </option>
         ))}
       </select>
-      <div className="after:content-['\25be'] after:text-[1em] after:absolute after:right-2.5 after:top-1/2 after:transform after:-translate-y-1/2"></div>
     </div>
   );
 }
