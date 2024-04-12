@@ -7,17 +7,15 @@ export default function BaseInput({
   placeholder,
   className,
   required = false,
+  onChange,
+  value,
+  errorMessage,
   ...props
 }) {
   const [hasBlurred, setHasBlurred] = useState(false);
-  const [inputValue, setInputValue] = useState('');
-
-  const handleInputChange = (e) => {
-    setInputValue(e.target.value);
-  };
 
   const handleInputBlur = () => {
-    if (!inputValue.trim() && required) {
+    if (!value.trim() && required) {
       setHasBlurred(true);
     }
   };
@@ -28,8 +26,11 @@ export default function BaseInput({
 
   return (
     <div className="formelement relative">
-      {hasBlurred && !inputValue.trim() && (
+      {hasBlurred && !value.trim() && (
         <span className="text-xs absolute z-[10] top-[-0.5rem] left-[0.75rem] text-red-500 font-thin bg-white px-1">Please complete this required field</span>
+      )}
+      {errorMessage && (
+        <span className="text-xs absolute z-[10] top-[-0.5rem] left-[0.75rem] text-red-500 font-thin bg-white px-1">{errorMessage}</span>
       )}
       <input
         type={type}
@@ -38,8 +39,8 @@ export default function BaseInput({
         className={`w-full px-4 py-2.5 border rounded-lg drop-shadow-sm border-[#d0d5dd] focus:outline-none ${className}`}
         onFocus={handleInputFocus}
         onBlur={handleInputBlur}
-        onChange={handleInputChange}
-        value={inputValue}
+        onChange={onChange}
+        value={value}
         {...props}
       />
     </div>
