@@ -13,13 +13,13 @@ export default function Home() {
         <div className="left flex flex-col sm:items-start items-center lg:w-[35%] w-full">
           <div className="top">
             <h1 className="md:text-4xl text-xl font-reckless">Media enquiries:</h1>
-            <a href="mailto:press@tuum.com" className="relative mt-2 text-lg font-denim after:content-[''] after:absolute after:h-[1px] after:-bottom-0.5 after:left-0 after:w-full after:bg-black after:transition-all after:duration-500 after:hover:w-0 after:hover:opacity-0 cursor-pointer">
+            <a href="mailto:press@tuum.com" className="relative mt-2 text-lg font-denim after:content-[''] after:absolute after:h-[1px] after:-bottom-0.5 after:left-0 after:w-full after:bg-black after:transition-all after:duration-500 hover:after:w-0 hover:after:opacity-0 cursor-pointer">
               press@tuum.com
             </a>
           </div>
           <div className="bottom sm:mt-8 mt-4">
             <h1 className="md:text-4xl text-xl font-reckless">Career questions:</h1>
-            <a href="mailto:careers@tuum.com" className="relative mt-2 text-lg font-denim after:content-[''] after:absolute after:h-[1px] after:-bottom-0.5 after:left-0 after:w-full after:bg-black after:transition-all after:duration-500 after:hover:w-0 after:hover:opacity-0 cursor-pointer">
+            <a href="mailto:careers@tuum.com" className="relative mt-2 text-lg font-denim after:content-[''] after:absolute after:h-[1px] after:-bottom-0.5 after:left-0 after:w-full after:bg-black after:transition-all after:duration-500 hover:after:w-0 hover:after:opacity-0 cursor-pointer">
               careers@tuum.com
             </a>
           </div>
